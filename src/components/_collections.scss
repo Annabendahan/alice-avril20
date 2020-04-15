@@ -1,0 +1,79 @@
+.collections {
+  background: map-get($colors, blue);
+
+  height: 100vh;
+  padding: 3%;
+  &__list {
+    padding-top: 5%;
+    position: relative;
+  }
+}
+
+.name {
+  &__white {
+    color: white;
+  }
+  &__blue {
+    color: map-get($colors, blue);
+  }
+}
+
+.navs {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  &__white {
+    a {
+      color: map-get($colors, grey);
+      text-decoration: none;
+    }
+  }
+}
+
+.collection {
+  color: map-get($colors, grey);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  img {
+    width: 25vw;
+    position: absolute;
+    left: 40%;
+    top: 0px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.h1 {
+  display: none;
+}
+
+.hdp {
+  &:hover .h1 {
+    display: block;
+  }
+}
+
+.n1 {
+  display: none;
+}
+
+.nina {
+  &:hover .n1 {
+    display: block;
+  }
+}
+
+.bx1 {
+  display: none;
+}
+
+.bx {
+  &:hover .bx1 {
+    display: block;
+  }
+}
