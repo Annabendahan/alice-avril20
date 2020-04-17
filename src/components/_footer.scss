@@ -1,9 +1,47 @@
 .footer {
   display: flex;
+  font-size: 0.7rem;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  bottom: 2%;
-  width: 100%;
+  bottom: 0px;
+  left: 4%;
+  width: 94%;
   margin: auto;
+  a {
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+  h5 {
+    font-size: 0.8rem;
+  }
+}
+
+.navs {
+  display: flex;
+  justify-content: space-between;
+  h5 {
+    margin: 0px 5px;
+  }
+
+  &__white {
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0px 5px;
+      @include breakpoint(m) {
+        margin: 0px 10px;
+      }
+    }
+  }
+  &__blue {
+    a {
+      color: map-get($colors, blue);
+      text-decoration: none;
+      margin: 0px 5px;
+      @include breakpoint(m) {
+        margin: 0px 10px;
+      }
+    }
+  }
 }

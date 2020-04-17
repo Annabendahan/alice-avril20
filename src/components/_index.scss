@@ -1,0 +1,115 @@
+.landing {
+  position: relative;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  svg {
+    width: 40vw;
+    @include breakpoint(m) {
+      width: 20vw;
+    }
+  }
+  &__scroll {
+    position: absolute;
+    bottom: 15vh;
+    svg {
+      width: 15vw;
+    }
+  }
+}
+
+.index-pic {
+  width: 40vw;
+
+  @include breakpoint(m) {
+    width: 30vw;
+  }
+
+  @include breakpoint(l) {
+    width: 40vw;
+  }
+
+  @include breakpoint(xl) {
+    width: 30vw;
+  }
+}
+
+.p1 {
+  margin: 35vh 0vh 0vh 5vw;
+}
+
+.p2 {
+  margin: -16vh 0vh 0vh 55vw;
+}
+
+.p3 {
+  margin: -3vh 0vh 0vh 10vw;
+}
+
+.p4 {
+  margin: -2vh 0vh 0vh 40vw;
+}
+
+.p5 {
+  margin: -4vh 0vh 0vh 0vw;
+}
+
+.p6 {
+  margin: -1vh 0vh 0vh 45vw;
+}
+
+.p7 {
+  margin: -5vh 0vh 0vh 7vw;
+}
+
+.p8 {
+  margin: -1vh 0vh 0vh 60vw;
+}
+
+.p9 {
+  margin: 0vh 0vh 0vh 35vw;
+}
+
+.p10 {
+  margin: 1vh 0vh 0vh 9vw;
+}
+
+.p11 {
+  margin: -3vh 0vh 0vh 60vw;
+}
+
+.p12 {
+  margin: 2vh 0vh 0vh 20vw;
+}
+
+.p13 {
+  margin: -2vh 0vh 0vh 65vw;
+}
+
+.p14 {
+  margin: -7vh 0vh 0vh 35vw;
+}
+
+.p15 {
+  margin: 3vh 0vh 0vh 12vw;
+}
+
+.p16 {
+  margin: -2vh 0vh 0vh 0vw;
+}
+
+.p17 {
+  margin: 2vh 0vh 0vh 55vw;
+}
+
+.p18 {
+  margin: 5vh 0vh 0vh 15vw;
+}
+
+.p19 {
+  margin: -2vh 0vh 0vh 20vw;
+}

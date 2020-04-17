@@ -19,7 +19,11 @@ class Collections extends Component {
         <Link to="/a-propos">À PROPOS</Link>
       </h5>
     )
-    let name = <h5 className="name__white"> ALICE THONNIER</h5>
+    let name = (
+      <Link to="/">
+        <h5 className="name name__white"> ALICE THONNIER</h5>{" "}
+      </Link>
+    )
 
     return (
       <Layout>
@@ -28,15 +32,100 @@ class Collections extends Component {
             transform: this.state.mounted
               ? "translateY(0vh)"
               : "translateY(100vh)",
-            transition: "transform 1s cubic-bezier(0.72, 0.0, 0.28, 1.0)",
+            transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
           }}
           className="collections"
         >
           <div className="profile">
-            <img src={logo} alt="logo" />
+            <svg
+              width="391"
+              height="133"
+              viewBox="0 0 391 133"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="25.2177" height="132.141" fill="white" />
+              <rect x="300.599" width="25.2177" height="132.141" fill="white" />
+              <rect x="192.662" width="25.2177" height="71.6182" fill="white" />
+              <rect
+                x="42.3652"
+                y="54.4712"
+                width="25.2177"
+                height="77.6704"
+                fill="white"
+              />
+              <rect x="107.933" width="25.2177" height="77.6704" fill="white" />
+              <rect
+                x="259.236"
+                y="54.4712"
+                width="25.2177"
+                height="77.6704"
+                fill="white"
+              />
+              <rect x="365.15" width="25.2177" height="132.141" fill="white" />
+              <rect x="42.3652" width="89.7749" height="25.2177" fill="white" />
+              <rect
+                x="42.3652"
+                y="52.4536"
+                width="89.7749"
+                height="25.2177"
+                fill="white"
+              />
+              <rect
+                x="43.373"
+                y="106.921"
+                width="89.7749"
+                height="25.2177"
+                fill="white"
+              />
+              <rect
+                x="192.662"
+                y="106.921"
+                width="89.7749"
+                height="25.2177"
+                fill="white"
+              />
+              <rect
+                x="192.662"
+                y="52.4536"
+                width="91.7923"
+                height="25.2177"
+                fill="white"
+              />
+              <rect
+                x="300.599"
+                y="106.921"
+                width="89.7749"
+                height="25.2177"
+                fill="white"
+              />
+              <rect x="300.599" width="89.7749" height="25.2177" fill="white" />
+              <rect x="192.662" width="91.7923" height="25.2177" fill="white" />
+              <rect
+                x="150.298"
+                y="106.921"
+                width="25.2177"
+                height="25.2177"
+                fill="white"
+              />
+              <rect
+                x="150.298"
+                y="46.3999"
+                width="25.2177"
+                height="25.2177"
+                fill="white"
+              />
+            </svg>
+
             <br />
             <h5>
-              <a href=""> @ALICE</a>
+              <a
+                href="https://www.instagram.com/alice_thonnier/"
+                target="blank"
+              >
+                {" "}
+                @ALICE_THONNIER
+              </a>
             </h5>
 
             <h5>

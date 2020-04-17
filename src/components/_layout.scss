@@ -206,6 +206,7 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
+  overflow-x: hidden;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -300,8 +301,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Work Sans";
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -621,4 +621,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.layout {
+  padding: 3%;
 }

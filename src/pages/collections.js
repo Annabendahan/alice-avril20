@@ -2,17 +2,24 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
+import SEO from "../components/seo"
 
 import h1 from "../images/h1.png"
+import h2 from "../images/h2.png"
 import n1 from "../images/n1.png"
 import bx1 from "../images/bx1.png"
 
 class Collections extends Component {
   state = {
     mounted: false,
+    unmount: false,
   }
   componentDidMount() {
     this.setState({ mounted: true })
+  }
+
+  componentWillUnmount() {
+    this.setState({ unmount: true })
   }
   render() {
     let navs = (
@@ -21,36 +28,47 @@ class Collections extends Component {
         <Link to="/a-propos">À PROPOS</Link>
       </h5>
     )
-    let name = <h5 className="name__white"> ALICE THONNIER</h5>
+    let name = (
+      <Link to="/">
+        <h5 className="name name__white"> ALICE THONNIER</h5>{" "}
+      </Link>
+    )
     return (
       <Layout>
+        <SEO title="Collections" />
         <div
           style={{
             transform: this.state.mounted
               ? "translateY(0vh)"
               : "translateY(100vh)",
-            transition: "transform 1s cubic-bezier(0.72, 0.0, 0.28, 1.0)",
+            transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
           }}
           className="collections"
         >
           <div className="collections__list">
-            <div className="collection hdp">
-              <h5> HEURE DE POINTE </h5>
-              <h5> 2018 </h5>
-              <img className="h1" src={h1} alt="h1" />
-            </div>
-            <div className="collection bx">
-              <h5> BANLIEUE X </h5>
-              <h5> 2018 </h5>
+            <Link to="/heures-de-pointe">
+              <div className="collection hdp">
+                <h5> HEURE DE POINTE </h5>
+                <h5 className="thin"> 2018 </h5>
+                <img className="h1" src={h1} alt="h1" />
+              </div>
+            </Link>
+            <Link to="/banlieue-x">
+              <div className="collection bx">
+                <h5> BANLIEUE X </h5>
+                <h5 className="thin"> 2018 </h5>
 
-              <img className="bx1" src={bx1} alt="h1" />
-            </div>
-            <div className="collection nina">
-              <h5> NINA </h5>
-              <h5> 2018 </h5>
+                <img className="bx1" src={bx1} alt="h1" />
+              </div>
+            </Link>
+            <Link to="/nina">
+              <div className="collection nina">
+                <h5> NINA </h5>
+                <h5 className="thin"> 2018 </h5>
 
-              <img className="n1" src={n1} alt="h1" />
-            </div>
+                <img className="n1" src={n1} alt="h1" />
+              </div>
+            </Link>
           </div>
 
           <Footer left={name} right={navs} />
