@@ -92,8 +92,8 @@ class CollectionLayout extends Component {
           onClick={() => this.nextPicHandler()}
         >
           <img src={img} alt="h1" />
-          <Footer left={left} right={close} />
         </div>
+        <Footer left={left} right={close} />
       </div>
     )
   }

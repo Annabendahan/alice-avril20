@@ -304,9 +304,8 @@ class IndexPage extends Component {
               <img className="index-pic p19" src={h10} alt="h1" />
             </ScrollAnimation>
           </Parallax>
-
-          <Footer left={name} right={navs} />
         </div>
+        <Footer left={name} right={navs} />
       </Layout>
     )
   }
