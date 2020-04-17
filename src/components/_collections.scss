@@ -73,8 +73,14 @@
 }
 
 .collection-layout {
+  position: sticky;
+
   &__picture {
-    height: 100vh;
+    overflow-y: hidden;
+    height: 95vh;
+    @include breakpoint(s) {
+      height: 100vh;
+    }
     display: flex;
     align-items: center;
     flex-direction: column;
