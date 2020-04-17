@@ -4,7 +4,15 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  bottom: 0vh;
+  bottom: 5vh;
+  @include breakpoint(m) {
+    bottom: 2vh;
+  }
+
+  @include breakpoint(l) {
+    bottom: 1vh;
+  }
+
   left: 4%;
   width: 94%;
   margin: auto;

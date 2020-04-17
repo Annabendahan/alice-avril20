@@ -11,7 +11,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 article,
 aside,
@@ -208,7 +207,8 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  overflow: hidden;
+  overflow-y: hidden;
+
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";

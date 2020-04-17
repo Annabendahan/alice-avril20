@@ -38,6 +38,10 @@
   }
 }
 
+.index {
+  padding-bottom: 200px;
+}
+
 .p1 {
   margin: 55vh 0vh 0vh 5vw;
 }
@@ -114,17 +118,6 @@
   margin: -2vh 0vh 0vh 20vw;
 }
 
-.coucou {
-  background: rgba(242, 63, 63, 0.43);
-  position: fixed;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -100px;
-  z-index: 999;
-
-  .overlay-content {
-    height: 100%;
-    overflow: scroll;
-  }
+.scrollable {
+  overflow: scroll;
 }

@@ -44,6 +44,13 @@ class IndexPage extends Component {
 
   componentDidMount = () => {
     this.setState({ mounted: true })
+    var root = document.getElementsByTagName("html")[0] // '0' to assign the first (and only `HTML` tag)
+    root.setAttribute("class", "scrollable")
+  }
+
+  componentWillUnmount = () => {
+    var root = document.getElementsByTagName("html")[0] // '0' to assign the first (and only `HTML` tag)
+    root.removeAttribute("class", "scrollable")
   }
 
   render() {
