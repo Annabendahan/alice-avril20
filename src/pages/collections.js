@@ -4,6 +4,12 @@ import Layout from "../components/layout"
 import Footer from "../components/footer"
 import SEO from "../components/seo"
 
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from "body-scroll-lock"
+
 import h1 from "../images/h1.png"
 import h2 from "../images/h2.png"
 import n1 from "../images/n1.png"
@@ -14,8 +20,19 @@ class Collections extends Component {
     mounted: false,
     unmount: false,
   }
+
+  targetElement = null
+
   componentDidMount() {
     this.setState({ mounted: true })
+    this.targetElement = document.querySelector("#collections")
+  }
+
+  showTargetElement = () => {
+    // ... some logic to show target element
+
+    // 3. Disable body scroll
+    disableBodyScroll(this.targetElement)
   }
 
   componentWillUnmount() {

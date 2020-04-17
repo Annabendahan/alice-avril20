@@ -3,15 +3,23 @@ import { Link } from "gatsby"
 import Footer from "./footer"
 import Layout from "../components/layout"
 
+import {
+  disableBodyScroll,
+  enableBodyScroll,
+  clearAllBodyScrollLocks,
+} from "body-scroll-lock"
+
 import h1 from "../images/h1.png"
 
 class CollectionLayout extends Component {
   state = {
     pic: 1,
   }
+  targetElement = null
 
   componentDidMount() {
     this.setState({ mounted: true })
+    this.targetElement = document.querySelector("#collection-layout")
   }
 
   nextPicHandler = () => {
@@ -24,6 +32,13 @@ class CollectionLayout extends Component {
 
   resetCount = () => {
     this.setState({ pic: 1 })
+  }
+
+  showTargetElement = () => {
+    // ... some logic to show target element
+
+    // 3. Disable body scroll
+    disableBodyScroll(this.targetElement)
   }
 
   render() {
@@ -63,16 +78,22 @@ class CollectionLayout extends Component {
     console.log(this.props.pictures.length)
 
     return (
-      <div className="collection-layout">
-        <Layout>
-          <div
-            className="collection-layout__picture"
-            onClick={() => this.nextPicHandler()}
-          >
-            <img src={img} alt="h1" />
-            <Footer left={left} right={close} />
-          </div>
-        </Layout>
+      <div
+        style={{
+          transform: this.state.mounted
+            ? "translateY(0vh)"
+            : "translateY(100vh)",
+          transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
+        }}
+        className="collection-layout"
+      >
+        <div
+          className="collection-layout__picture"
+          onClick={() => this.nextPicHandler()}
+        >
+          <img src={img} alt="h1" />
+          <Footer left={left} right={close} />
+        </div>
       </div>
     )
   }

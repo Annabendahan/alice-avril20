@@ -22,16 +22,8 @@ class Banlieuex extends Component {
     return (
       <div>
         <SEO title="Banlieue X" />
-        <div
-          style={{
-            transform: this.state.mounted
-              ? "translateY(0vh)"
-              : "translateY(100vh)",
-            transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
-          }}
-        >
-          <CollectionLayout pictures={pictures} name="BANLIEUE X" />
-        </div>
+
+        <CollectionLayout pictures={pictures} name="BANLIEUE X" />
       </div>
     )
   }

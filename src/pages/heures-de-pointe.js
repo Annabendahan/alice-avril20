@@ -26,19 +26,11 @@ class HeuresDePointe extends Component {
   render() {
     let pictures = [h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11]
     return (
-      <div>
+      <Layout>
         <SEO title="Heures de pointe" />
-        <div
-          style={{
-            transform: this.state.mounted
-              ? "translateY(0vh)"
-              : "translateY(100vh)",
-            transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
-          }}
-        >
-          <CollectionLayout pictures={pictures} name="HEURES DE POINTE" />
-        </div>
-      </div>
+
+        <CollectionLayout pictures={pictures} name="HEURES DE POINTE" />
+      </Layout>
     )
   }
 }
