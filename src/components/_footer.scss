@@ -4,16 +4,22 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  bottom: 0px;
+  bottom: 3vh;
   left: 4%;
   width: 94%;
   margin: auto;
   a {
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    @include breakpoint(m) {
+      font-size: 0.8rem;
+    }
   }
   h5 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    @include breakpoint(m) {
+      font-size: 0.8rem;
+    }
   }
 }
 
