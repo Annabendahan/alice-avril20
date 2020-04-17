@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  bottom: 5vh;
+  bottom: 3vh;
   @include breakpoint(m) {
     bottom: 2vh;
   }

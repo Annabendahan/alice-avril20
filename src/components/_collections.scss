@@ -1,9 +1,14 @@
 .collections {
   background: map-get($colors, blue);
 
-  height: 100vh;
   overflow: hidden;
   padding: 3%;
+
+  height: 95vh;
+
+  @include breakpoint(s) {
+    height: 100vh;
+  }
   &__list {
     padding-top: 5%;
     position: relative;
@@ -74,7 +79,10 @@
 
 .collection-layout {
   position: sticky;
-  height: 100vh;
+  height: 95vh;
+
+  @include breakpoint(s) {
+    height: 100vh;
   overflow-y: hidden;
 
   display: flex;
