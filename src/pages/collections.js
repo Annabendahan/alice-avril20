@@ -87,9 +87,8 @@ class Collections extends Component {
               </div>
             </Link>
           </div>
-
-          <Footer left={name} right={navs} />
         </div>
+        <Footer left={name} right={navs} />
       </Layout>
     )
   }

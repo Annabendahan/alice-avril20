@@ -147,8 +147,8 @@ class Collections extends Component {
               libre elle continue tout de même de créer des collections.
             </h5>
           </div>
-          <Footer left={name} right={navs} />
         </div>
+        <Footer left={name} right={navs} />
       </Layout>
     )
   }
