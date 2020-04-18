@@ -9,14 +9,16 @@ class Collections extends Component {
   state = {
     mounted: false,
   }
+
   componentDidMount() {
     this.setState({ mounted: true })
   }
   render() {
     let navs = (
       <h5 className="navs navs__white">
+        <Link to="/">ACCUEIL</Link>
+
         <Link to="/collections">COLLECTIONS</Link>
-        <Link to="/a-propos">À PROPOS</Link>
       </h5>
     )
     let name = (
@@ -32,7 +34,7 @@ class Collections extends Component {
             transform: this.state.mounted
               ? "translateY(0vh)"
               : "translateY(100vh)",
-            transition: "transform 1s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
+            transition: "transform .8s cubic-bezier(0.82, 0.0, 0.18, 1.0)",
           }}
           className="collections"
         >

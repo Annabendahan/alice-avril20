@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 
 import Layout from "../components/layout"
 import Footer from "./footer"
@@ -25,12 +25,19 @@ class CollectionLayout extends Component {
 
   nextPicHandler = () => {
     if (this.state.pic == this.props.pictures.length) {
-      this.setState({ pic: 1 })
+      navigate("/collections")
     } else if (this.state.pic != this.props.pictures.length) {
       this.setState({ pic: this.state.pic + 1 })
     }
   }
 
+  previousPicHandler = () => {
+    if (this.state.pic == 1) {
+      this.setState({ pic: 1 })
+    } else if (this.state.pic != 1) {
+      this.setState({ pic: this.state.pic - 1 })
+    }
+  }
   resetCount = () => {
     this.setState({ pic: 1 })
   }
@@ -81,6 +88,11 @@ class CollectionLayout extends Component {
     return (
       <Layout>
         <div
+          className="divleft"
+          onClick={() => this.previousPicHandler()}
+        ></div>
+        <div className="divright" onClick={() => this.nextPicHandler()}></div>
+        <div
           style={{
             transform: this.state.mounted
               ? "translateY(0vh)"
@@ -89,10 +101,7 @@ class CollectionLayout extends Component {
           }}
           className="collection-layout"
         >
-          <div
-            className="collection-layout__picture"
-            onClick={() => this.nextPicHandler()}
-          >
+          <div className="collection-layout__picture">
             <img src={img} alt="h1" />
           </div>
         </div>
