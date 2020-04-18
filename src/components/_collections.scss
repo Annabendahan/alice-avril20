@@ -4,7 +4,7 @@
   overflow: hidden;
   padding: 3%;
 
-  height: 100vh;
+  height: 95vh;
 
   @include breakpoint(s) {
     height: 100vh;
@@ -79,7 +79,7 @@
 
 .collection-layout {
   position: sticky;
-  height: 100vh;
+  height: 95vh;
   overflow-y: hidden;
 
   display: flex;
