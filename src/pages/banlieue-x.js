@@ -21,34 +21,10 @@ class Banlieuex extends Component {
   }
   render() {
     let pictures = [bx1, bx2, bx3, bx5]
-    let left = (
-      <h5 className="coll-name">
-        {" "}
-        <span className="thin"> {this.props.name} </span>{" "}
-        <svg
-          width="20"
-          height="2"
-          viewBox="0 0 20 2"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line x1="20" y1="1" y2="1" stroke="#263654" stroke-width="2" />
-        </svg>
-        <b>
-          {this.state.pic} /{this.props.pictures.length}{" "}
-        </b>{" "}
-      </h5>
-    )
 
-    let close = (
-      <h5 className="navs__blue">
-        <Link to="/collections">CLOSE</Link>
-      </h5>
-    )
     return (
       <div>
         <SEO title="Banlieue X" />
-
         <CollectionLayout pictures={pictures} name="BANLIEUE X" />
       </div>
     )
