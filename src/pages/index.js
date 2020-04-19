@@ -224,84 +224,120 @@ class IndexPage extends Component {
 
           <ScrollAnimation animateIn="fadeIn">
             <Parallax y={[-30, 30]} tagOuter="figure">
-              <img className="index-pic p1" src={h1} alt="h1" />
+              <Link to="/heures-de-pointe">
+                <img className="index-pic p1" src={h1} alt="h1" />
+              </Link>
             </Parallax>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
             <Parallax y={[-30, 30]} tagOuter="figure">
-              <img className="index-pic p2" src={h2} alt="h1" />
+              <Link to="/heures-de-pointe">
+                <img className="index-pic p2" src={h2} alt="h1" />
+              </Link>
             </Parallax>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p3" src={bx2} alt="h1" />
+            <Link to="/banlieue-x">
+              <img className="index-pic p3" src={bx2} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p4" src={n2} alt="h1" />
+            <Link to="/nina">
+              <img className="index-pic p4" src={n2} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <Parallax y={[-30, 30]} tagOuter="figure">
             <ScrollAnimation animateIn="fadeIn">
-              <img className="index-pic p5" src={h11} alt="h1" />
+              <Link to="/heures-de-pointe">
+                <img className="index-pic p5" src={h11} alt="h1" />
+              </Link>
             </ScrollAnimation>
           </Parallax>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p6" src={h3} alt="h1" />
+            <Link to="/heures-de-pointe">
+              <img className="index-pic p6" src={h3} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p7" src={bx3} alt="h1" />
+            <Link to="/banlieue-x">
+              <img className="index-pic p7" src={bx3} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p8" src={n3} alt="h1" />
+            <Link to="/nina">
+              <img className="index-pic p8" src={n3} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <Parallax y={[-40, 40]} tagOuter="figure">
             <ScrollAnimation animateIn="fadeIn">
-              <img className="index-pic p9" src={h4} alt="h1" />
+              <Link to="/heures-de-pointe">
+                <img className="index-pic p9" src={h4} alt="h1" />
+              </Link>
             </ScrollAnimation>
           </Parallax>
           <Parallax y={[-20, 20]} tagOuter="figure">
             <ScrollAnimation animateIn="fadeIn">
-              <img className="index-pic p10" src={bx1} alt="h1" />
+              <Link to="/banlieue-x">
+                <img className="index-pic p10" src={bx1} alt="h1" />
+              </Link>
             </ScrollAnimation>
           </Parallax>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p11" src={h5} alt="h1" />
+            <Link to="/heures-de-pointe">
+              <img className="index-pic p11" src={h5} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p12" src={n1} alt="h1" />
+            <Link to="/nina">
+              <img className="index-pic p12" src={n1} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <Parallax y={[-20, 20]} tagOuter="figure">
             <ScrollAnimation animateIn="fadeIn">
-              <img className="index-pic p13" src={h6} alt="h1" />
+              <Link to="/heures-de-pointe">
+                <img className="index-pic p13" src={h6} alt="h1" />
+              </Link>
             </ScrollAnimation>
           </Parallax>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p14" src={h7} alt="h1" />
+            <Link to="/heures-de-pointe">
+              <img className="index-pic p14" src={h7} alt="h1" />
+            </Link>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p15" src={bx5} alt="h1" />
+            <Link to="/banlieue-x">
+              <img className="index-pic p15" src={bx5} alt="h1" />
+            </Link>
           </ScrollAnimation>
           <Parallax y={[-30, 30]} tagOuter="figure">
             <ScrollAnimation animateIn="fadeIn">
-              <img className="index-pic p16" src={h8} alt="h1" />
+              <Link to="/heures-de-pointe">
+                <img className="index-pic p16" src={h8} alt="h1" />
+              </Link>
             </ScrollAnimation>
           </Parallax>
           <ScrollAnimation animateIn="fadeIn">
-            <img className="index-pic p17" src={h9} alt="h1" />
+            <Link to="/heures-de-pointe">
+              <img className="index-pic p17" src={h9} alt="h1" />
+            </Link>
           </ScrollAnimation>
           <Parallax y={[-10, 50]} tagOuter="figure">
             <ScrollAnimation animateIn="fadeIn">
-              <img className="index-pic p19" src={h10} alt="h1" />
+              <Link to="/heures-de-pointe">
+                <img className="index-pic p19" src={h10} alt="h1" />
+              </Link>
             </ScrollAnimation>
           </Parallax>
         </div>
