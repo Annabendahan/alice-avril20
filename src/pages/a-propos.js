@@ -145,8 +145,8 @@ class Collections extends Component {
               qui lui propose d’exposer ses collections lors d’expositions
               temporaires. A la suite de son diplôme Alice effectue un stage de
               modélisme chez Balzac Paris et trouve ensuite un emploi dans le
-              groupe GPE (Sergent Major , DPAM, Natalys). Durant sont temps
-              libre elle continue tout de même de créer des collections.
+              groupe GPE (Sergent Major , DPAM, Natalys). Durant son temps libre
+              elle continue tout de même de créer des collections.
             </h5>
           </div>
         </div>

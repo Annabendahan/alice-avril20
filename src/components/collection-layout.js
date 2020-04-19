@@ -79,7 +79,7 @@ class CollectionLayout extends Component {
 
     let close = (
       <h5 className="navs__blue">
-        <Link to="/collections">CLOSE</Link>
+        <Link to="/collections">FERMER</Link>
       </h5>
     )
 
