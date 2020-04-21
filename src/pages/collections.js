@@ -76,7 +76,7 @@ class Collections extends Component {
           <div className="collections__list">
             <Link to="/heures-de-pointe">
               <div className="collection hdp">
-                <h5> HEURE DE POINTE </h5>
+                <h5> HEURES DE POINTE </h5>
                 <h5 className="thin"> 2018 </h5>
                 <img className="h1" src={h1} alt="h1" />
               </div>
