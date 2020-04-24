@@ -19,6 +19,7 @@ class Collections extends Component {
         <Link to="/">ACCUEIL</Link>
 
         <Link to="/collections">COLLECTIONS</Link>
+        <Link to="/moodboard">MOODBOARD</Link>
       </h5>
     )
     let name = (

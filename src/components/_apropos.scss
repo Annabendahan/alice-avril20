@@ -12,7 +12,7 @@
   }
   svg {
     width: 30vw;
-    margin-bottom: -20px;
+    margin: -20px 0px;
     @include breakpoint(s) {
       width: 10vw;
       margin-bottom: 5px;

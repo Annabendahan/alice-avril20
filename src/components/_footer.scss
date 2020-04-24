@@ -38,6 +38,12 @@
   h5 {
     margin: 0px 5px;
   }
+  &__link {
+    color: map-get($colors, blue);
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   &__white {
     a {

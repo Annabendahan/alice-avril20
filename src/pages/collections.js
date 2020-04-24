@@ -52,6 +52,7 @@ class Collections extends Component {
     let navs = (
       <h5 className="navs navs__white">
         <Link to="/">ACCUEIL</Link>
+        <Link to="/moodboard">MOODBOARD</Link>
         <Link to="/a-propos">À PROPOS</Link>
       </h5>
     )

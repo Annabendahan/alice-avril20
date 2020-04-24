@@ -1,14 +1,9 @@
 import React, { Component } from "react"
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
+import { navigate } from "@reach/router"
 
 import Layout from "../components/layout"
 import Footer from "./footer"
-
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks,
-} from "body-scroll-lock"
 
 import h1 from "../images/h1.png"
 
@@ -16,16 +11,14 @@ class CollectionLayout extends Component {
   state = {
     pic: 1,
   }
-  targetElement = null
 
   componentDidMount() {
     this.setState({ mounted: true })
-    this.targetElement = document.querySelector("#collection-layout")
   }
 
   nextPicHandler = () => {
     if (this.state.pic == this.props.pictures.length) {
-      navigate("/collections")
+      navigate(-1)
     } else if (this.state.pic != this.props.pictures.length) {
       this.setState({ pic: this.state.pic + 1 })
     }
@@ -40,13 +33,6 @@ class CollectionLayout extends Component {
   }
   resetCount = () => {
     this.setState({ pic: 1 })
-  }
-
-  showTargetElement = () => {
-    // ... some logic to show target element
-
-    // 3. Disable body scroll
-    disableBodyScroll(this.targetElement)
   }
 
   render() {

@@ -1,0 +1,29 @@
+.moodboard {
+  margin: 20% auto;
+
+  position: relative;
+  z-index: 10;
+  width: 85%;
+  div {
+    width: 33%;
+    float: left;
+    padding: 1px;
+    margin-bottom: -5px;
+  }
+  img {
+    margin: 0px;
+  }
+  @include breakpoint(s) {
+    margin: 10% auto;
+    width: 80%;
+  }
+  @include breakpoint(m) {
+    margin: 10% auto;
+    width: 75%;
+  }
+
+  @include breakpoint(xl) {
+    margin: 10% auto;
+    width: 70%;
+  }
+}

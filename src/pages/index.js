@@ -57,6 +57,8 @@ class IndexPage extends Component {
     let navs = (
       <h5 className="navs__blue">
         <Link to="/collections">COLLECTIONS</Link>
+        <Link to="/moodboard">MOODBOARD</Link>
+
         <Link to="/a-propos">À PROPOS</Link>
       </h5>
     )
