@@ -147,7 +147,10 @@ class Collections extends Component {
               temporaires. A la suite de son diplôme Alice effectue un stage de
               modélisme chez Balzac Paris et trouve ensuite un emploi dans le
               groupe GPE (Sergent Major , DPAM, Natalys). Durant son temps libre
-              elle continue tout de même de créer des collections.
+              elle continue tout de même de créer des collections. Site créé par{" "}
+              <a href="https://annabdh.com" target="blank">
+                Anna Bendahan
+              </a>{" "}
             </h5>
           </div>
         </div>
